@@ -7,6 +7,7 @@
   <% @list.bookmarks.each do |bookmark| %>
     <li class="list-group-item"><%= bookmark.comment %></li>
     <p><%= link_to "delete bookmark", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %><p>
+    <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
   <% end %>
 </ul>
 <br>

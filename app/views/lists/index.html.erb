@@ -6,3 +6,11 @@
 <% end %>
 
 <p><%= link_to "create a new list", "/lists/new" %><p>
+
+<!-- app/views/articles/index.html.erb -->
+<%= cl_image_tag("xsyew0zxdgihwtfyns9u",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("fdksjvdbztf0glnemirg",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
