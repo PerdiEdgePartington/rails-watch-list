@@ -16,7 +16,7 @@ class ListsController < ApplicationController
     @list = List.new(list_params)
     @list.save
 
-    redirect_to list_path(@list)
+    redirect_to root_path(@list)
   end
 
   private
